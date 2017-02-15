@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
-    <title>Login Application</title>
+    <title>Shopping Cart</title>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,33 +20,41 @@
         <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
         <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
 
-
         <script src= "app.js"></script>
         <script src= "common/authenticateUser.js"></script>
-        <script src= "common/httpInterceptor.js"></script>
+        <script src= "common/cart.js"></script>
         <script src= "login/login.js"></script>
         <script src= "home/home.js"></script>
         <script src= "splash/splash.js"></script>
 
         <!--<script src= "build/js/main.min.js"></script>-->
 
-        <script src= "scripts/checklist-model/checklist-model.js"></script>
-    </head>
-    <body ng-view>
-      
-        <!-- /.col -->
-        <!--Footer end -->
-        <!--Core JavaScript file  -->
+        <!--<script src= "scripts/checklist-model/checklist-model.js"></script>-->
         <script src="assets/js/jquery-1.10.2.js"></script>
-        <!--bootstrap JavaScript file  -->
         <script src="assets/js/bootstrap.js"></script>
         <!--Slider JavaScript file  -->
         <script src="assets/ItemSlider/js/modernizr.custom.63321.js"></script>
-        <script src="assets/ItemSlider/js/jquery.catslider.js"></script>
+        
+<script src="assets/ItemSlider/js/jquery.catslider.js"></script>
+    </head>
+    
+    <body ng-view>
+    <header></header>
+    <div >
+        
+        <!-- /.col -->
+        <!--Footer end -->
+        <!--Core JavaScript file  -->
+        <!--bootstrap JavaScript file  -->
+        
         <script>
-                    $(function () {
-                        $('#mi-slider').catslider();
-                    });
+        $(function () {
+//            alert($('#mi-slider'));
+            $('#mi-slider').catslider();
+        });
         </script>
+        </div>
+         <footer></footer>
     </body>
+   
 </html>
